@@ -9,24 +9,30 @@ int main()
     cin>>n;
     int arr[n];
     char s;
-    for(int i=0;i<n;i++){
+    for(int i=0; i<n; i++)
+    {
         cin>>s;
-        if(s == 'I'){
+        if(s == 'I')
+        {
             x++;
             arr[i] = x;
-        }else{
+        }
+        else
+        {
             x--;
             arr[i] = x;
         }
     }
 
     int m = arr[0];
-    for(int i=0;i<n;i++){
+    for(int i=0; i<n; i++)
+    {
         if(arr[i]>m)
             m = arr[i];
     }
 
-    if(m<0){
+    if(m<0)
+    {
         m=0;
     }
 
