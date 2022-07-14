@@ -10,7 +10,11 @@ int main()
     cin>>a>>b>>c;
     long long int x = max(a,b);
     long long int y = max(x,c);
-    cout<<y;
+    int coutner = 0;
+
+   while(y>=0){
+
+   }
 
 }
 
