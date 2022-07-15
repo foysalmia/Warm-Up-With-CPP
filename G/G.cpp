@@ -1,18 +1,23 @@
-
 #include<bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-    long long int a,b,x,result = 0,i;
-    cin>>a>>b>>x;
-
-    for(i = a; i<= b; i++){
-        if(i%x == 0){
-            result++;
-        }
+    long long a, b, x;
+    cin >> a >> b >> x;
+    long long ans;
+    if(a > b)
+    {
+        cout << "0" << '\n';
+        return 0;
     }
-
-    cout<<result<<endl;
+    ans = b / x - a / x;
+    if(a % x == 0)
+    {
+        ans++;
+    }
+    cout << ans << '\n';
+    return 0;
 }
+
